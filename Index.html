@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="text" href="chart .html" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- chartjs link -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <ul style="background-color: white" class="side-nav">
+        <li>
+          <a href="#" style="background-color: white">
+            <img
+              src="./images/icon.png"
+              alt="butterfly"
+              style="width: 25px; height: 25px"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#Search">
+            <i class="fa fa-search"></i>
+          </a>
+        </li>
+        <li style="margin-top: 2em" class="side">
+          <a href="#Home">
+            <i class="fa fa-home fa-lg active"></i>
+          </a>
+        </li>
+        <li class="side">
+          <a href="#News">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#list">
+            <i class="fa fa-list-alt"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#Person">
+            <i class="fa fa-user fa-lg"></i>
+          </a>
+        </li>
+        <li style="margin-top: 14em">
+          <a href="#Notifications">
+            <i class="fa fa-bell fa-lg t-bell"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#Logout">
+            <i class="fa fa-sign-out fa-lg" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="some">
+    <nav class="nav">
+          <a href="#Home" class="nav_link">
+            <i class="fa fa-home fa-lg active"></i>
+          </a>
+          <a href="#News" class="nav_link">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+          </a>
+          <a href="#list" class="nav_link">
+            <i class="fa fa-list-alt"></i>
+          </a>
+          <a href="#Person" class="nav_link">
+            <i class="fa fa-user fa-lg"></i>
+          </a>
+          <a href="#Search" class="nav_link">
+            <i class="fa fa-search"></i>
+          </a>
+    </nav>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm sidebar" style="align-items: flex-start">
+          <div  style="
+              display: flex;
+              flex-wrap: wrap;
+              margin-top: 25px;
+              margin-left: 20px;">
+            <img class="head"
+              src="./images/doctor.jpg"
+              alt="Profile Picture"
+              style="
+                width: 60px;
+                height: 60px;
+                border-radius: 30px;
+                box-shadow: 3px 3px 3px#CCC;
+              "
+            />
+            <div class="" style="margin-left: 1em; align-items: stretch; zoom: 55%">
+              <p style="font-size: 2.5em; font-weight: bold" class="myfont">Hi Mike,</p>
+              <p class="lite" style="font-size: 1.5em" >Welcome back</p>
+            </div>
+          </div> <br />
+          <div style="zoom: 75%; margin-left: 20px">
+            <p class="one myfont">Today</p>
+            <p class="two myfont">$19,892</p>
+            <p class="lite" style="margin-top: -15px">Account Balance</p>
+
+            <p class="one myfont">$4000</p>
+            <p class="lite myfont" style="margin-top: -15px">Year-to-Date Contributions</p>
+
+            <p class="one myfont">$1,892</p>
+            <p class="lite myfont" style="margin-top: -15px">Total Interest</p>
+          </div>
+          <div class="dropdown" style="margin-left: 20px">
+            <button
+              class="btn btn-secondary dropdown-toggle myfont"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              style="background-color: #3e2edf"
+            >
+              I want to
+            </button>
+          </div>
+          <br /><br />
+          <div style="zoom: 75%; margin-top: -15px; margin-left: 20px">
+            <p class="one myfont" style="margin-top: -15px">Recent Transactions</p>
+            <br />
+            <p class="lite myfont" style="margin-top: -15px">2020-08-07</p>
+            <p class="one myfont" style="margin-top: -10px">
+              Withdrawal Transfer to Bank-xxx11
+            </p>
+            <hr />
+            <p class="lite myfont" style="margin-top: -10px">2020-07-21</p>
+            <p class="one myfont" style="margin-top: -10px">
+              Withdrawal Transfer to Bank-xxx11
+            </p>
+            <hr />
+            <p class="lite myfont" style="margin-top: -10px">2020-07-16</p>
+            <p class="one myfont" style="margin-top: -10px">
+              Withdrawal Transfer to Bank-xxx11
+            </p>
+            <hr />
+          </div>
+        </div>
+        <div class="col-sm mt-4 middle">
+          <strong style="color: #3e2edf" class="myfont">Retirement Income</strong>
+          <p class="two myfont">Starting Year 2056</p>
+          <div
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              margin-top: initial;
+              zoom: 60%;
+            "
+          >
+            <div style="flex: 2em">
+              <b class="two myfont">$300,000</b>
+              <p class="lite myfont">My Goal</p>
+              <hr style="background-color: #3e2edf; height: 1px" />
+            </div>
+            <div style="flex: 2em">
+              <b class="two myfont">59%</b>
+              <p class="lite myfont">Goal Achieved</p>
+              <hr style="background-color: #3e2edf; height: 1px" />
+            </div>
+            <br />
+            <div style="flex: 2em">
+              <b class="two myfont">$300</b>
+              <p class="lite myfont">Est. Monthly Income</p>
+              <hr style="background-color: #3e2edf; height: 1px" />
+            </div>
+          </div>
+          <p class="one myfont" style="margin-top: 10px">Contributions Overtime</p>
+
+          <canvas id="myChart"></canvas>
+          
+          <div class="pie">
+          <p class="one myfont">How do I compare to my peers?</p>
+          <p style="zoom: 80%" class="lite myfont">
+            This numbers repersent current goal achievment
+          </p>
+          <div class="row">
+            <div class="col-sm">
+              <div style="zoom: 50%">
+                <p style="font-size:17px;" class="one myfont">Age : Under 30 ▼</p>
+                <hr />
+                <p style="font-size:17px;" class="one myfont">Salary : K 20 - K 30 ▼</p>
+                <hr />
+                <p style="font-size:17px;" class="one myfont">Gender : Male ▼</p>
+                <hr />
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="flex-wrapper">
+                <div class="box">
+            <div class="canvas-container">
+              <div class="chart" data-percent="78" data-scale-color="#ffb400">
+                <p class="myfont">
+                  78%
+                </p></div>
+    
+            </div>
+            <p style="font-size:10px" class="t2 myfont">Average</b>
+          </div>
+            <div class="space"></div>
+                <div class="box">
+            <div class="canvas-container"> 
+            <div class="chart" data-percent="95" data-scale-color="#ffb400"><p class="myfont">
+              95%
+            </p></div>
+            </div>
+            <p style="font-size:10px" class="t2 myfont">Top</p>
+          </div>
+            <div class="space"></div>
+
+                <div class="box">
+            <div class="canvas-container">
+            <div class="chart" data-percent="59" data-scale-color="#ffb400"><p class="myfont">
+              59%
+            </p></div>
+            </div>
+            <p style="font-size:10px" class="t2 myfont">Me</p>
+          </div>
+          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END -->
+        <div>
+        <div class=" mt-4 end">
+          <p class="three ml-2 myfont">Retirement Strategy</p>
+          <p style="font-size:12px" class="one ml-2 myfont">Employee Contribution</p>
+          <div class="bb">
+            <div class="slider-container">
+              <span class="bar"><span class="fill"></span></span>
+              <input
+                id="slider"
+                class="slider"
+                type="range"
+                min="0"
+                max="100"
+                value="20"
+              />
+            </div>
+          </div>
+          <br />
+          <p style="font-size:12px" class="one ml-2 myfont">Retirement Age</p>
+          <div class="bb">
+            <div class="slider-container">
+              <span class="bart"><span class="fillt"></span></span>
+              <input
+                id="slidert"
+                class="slidert"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+              />
+            </div>
+          </div>
+          <script>
+            var $slider = $("#slider");
+            var $fill = $(".bar .fill");
+
+            function setBar() {
+              $fill.css("width", $slider.val() + "%");
+            }
+
+            $slider.on("input", setBar);
+
+            setBar();
+            var $slidert = $("#slidert");
+            var $fillt = $(".bart .fillt");
+
+            function setBart() {
+              $fillt.css("width", $slidert.val() + "%");
+            }
+
+            $slidert.on("input", setBart);
+
+            setBart();
+          </script>
+          <hr class="ml-2"/>
+          <div style="display: flex; flex-wrap: wrap; margin-top: initial">
+            <div style="flex: 2em; zoom: 80%">
+              <p class="ml-1 myfont">EmployeeContribution</p>
+              <p class="ml-2 myfont">Interest Rate</p>
+            </div>
+            <div style="flex: 2em; zoom: 80%">
+              <p class="" style="margin-left:75px">8.4%</p>
+              <p style="margin-left:75px">5%</p>
+            </div>
+          </div>
+          <button type="button" class="btn myfont btn-s" id="btn">Update</button
+          ><br>
+          <a href="#" style="zoom: 80%" class=" mt-3 rp myfont doc"> View Help Docs ></a>
+          
+        </div>
+        <div class="learn-more">
+      <p class="ml-4 myfont">Are you considering a </p>
+      <b class="ml-4 myfont">Housing Advance?</b>
+      <p class="ml-4 lite myfont">Limited time reduced Interest</p>
+      <p class="ml-4 rp myfont"> Learn More></p>
+
+      
+    </div>
+    </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>  
+    <script src="jquery.easypiechart.js"></script>
+    
+  </body>
+</html>
